@@ -1,0 +1,19 @@
+--如何編譯
+在"HW2/src"目錄下輸入以下指令:
+$ make
+可執行檔"FM_Partitioner"將會產生在"/HW2/bin"目錄
+若需要移除檔案請輸入以下指令:
+$ make clean
+
+--如何執行
+在"/HW2/bin"目錄下使用以下指令
+$ ./<exe> -c <cells> -n <nets> -o <output file name>
+例如:
+./FM_Partitioner -c ../testcases/p2-1.cells -n ../testcases/p2-1.nets -o p2-1.out
+執行結果將輸出至"../output"目錄
+
+--自動編譯及執行
+在"HW2"目錄下使用以下指令
+$ ./run.sh
+將自動編譯並讀取"/HW2/testcases/"目錄下p2-1~p2-4(.cells / .nets)測資執行程式
+執行結果將輸出至"../output"目錄
